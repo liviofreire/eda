@@ -85,7 +85,7 @@ public class RedBlackTree<K extends Comparable<K>, V> extends OrderedBinaryTree<
 	
 	@Override
 	public void put(K key, V value) {
-		put(root, key, value);
+		this.root = put(root, key, value);
 	}
 
 	@Override
